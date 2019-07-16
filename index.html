@@ -2,19 +2,44 @@
 <html lang="en">
 <head>
 <title>Change Image on Hover in CSS</title>
+<h1>爸妈，这是聪聪的网站</h1>
+<h2>Cat and Girl</h2>
 <style type="text/css">
+
     .card {
-        width: 800px;
-        height: 800px;
-        background: url("img/a.jpg") no-repeat;
+        width: 420px;
+        height: 420px;
+        background: url("/img/3.png") no-repeat;
         margin: 50px;
     }
     .card:hover {
-        background: url("img/g.jpg") no-repeat;
+        background: url("/img/4.png") no-repeat;
     }
+
+    .img {
+	position: relative;
+	left: 500px;
+	bottom: 580px;
+        width: 420px;
+        height: 420px;
+        background: url("/img/1.png") no-repeat;
+        margin: 50px;
+	background-position: top right; 
+    }
+    .img:hover {
+        background: url("/img/2.png") no-repeat;
+    }
+
 </style>
 </head>
-<body>
-    <div class="card"></div>
+<body style="background-color:rgb(205,255,255)">
+    <div class="row">
+        <div class="column">
+            <div class="card"></div>
+        </div>
+        <div class="column">
+            <div class="img"></div>
+        </div>
+    </div>  
 </body>
-</html>                       
+</html> 
